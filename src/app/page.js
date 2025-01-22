@@ -81,7 +81,7 @@ export default function CreateProject() {
           <Link href="/vision" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             What we do
           </Link>
-          <Link href="#tech" className="font-bold text-lg pointer-events-none" onClick={toggleOverlay}>
+          <Link href="#tech" className="font-bold text-lg pointer-events-none opacity-50" onClick={toggleOverlay}>
             Ventures
           </Link>
           <Link href="#tech" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
