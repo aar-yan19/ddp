@@ -78,7 +78,7 @@ export default function CreateProject() {
           <i className="fa-sharp fa-solid fa-times"></i>
         </button>
         <div className="flex flex-col items-start justify-center h-full p-8 space-y-2">
-          <Link href="/vision" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+          <Link href="#home" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             What we do
           </Link>
           <Link href="#tech" className="font-bold text-lg pointer-events-none" onClick={toggleOverlay}>
@@ -91,7 +91,7 @@ export default function CreateProject() {
             - XPERIENCE
           </Link>
           <Link href="#noier" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
-            - N'OIER
+            - NOIER
           </Link>
           <Link href="#suroor" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             - suroor
@@ -228,8 +228,7 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
     </h1>
   </div>
 
-
-  <div className="z-40 relative w-full pl-20 mt-10 space-y-10">
+  <div className="z-40 relative w-full pl-20 mt-6 space-y-10">
     <div id="wrapmain1" className="flex flex-col items-start">
       <Image
         className="block"
@@ -256,11 +255,11 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
         }}
         className=" z-40 px-1 py-1 text-white text-base max-w-[600px]"
       >
-    Forthly is an innovative platform that empowers users
-     to showcase their projects through dynamic, layered portfolios. 
-     It simplifies project documentation, highlights technical and
-      creative insights, and offers recruiters a streamlined view of talent,
-       fostering impactful connections.
+        We take pride in our dynamic approach to managing
+        a diverse range of projects. Our team combines
+        strategic insight with efficient execution to showcase 
+        each initiative thoughtfully, reflecting our steadfast
+        dedication to innovation and excellence.
       </h2>
     </div>
 
@@ -270,8 +269,7 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
       </Link>
     </div>
   </div>
-  </div>
-
+</div>
 
 
 
@@ -330,8 +328,7 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
     </h1>
   </div>
 
-  <div className="z-40 relative w-full pr-20 mt-10 space-y-10">
-
+  <div className="z-40 relative w-full pr-20 space-y-10 ">
 
     <div id="wrapmain1" className="flex flex-col items-end">
       <Image
@@ -351,7 +348,7 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
     }}
     className="decoration-pink-300 decoration-4 text-3xl mb-5 z-40 px-1 text-white font-black max-w-[600px]"
   >
-   Independent &
+   Independent
   Original,<br />
   Interactive entertainment
   </h1>     
@@ -361,13 +358,11 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
     }}
     className=" z-40 px-1 py-1 text-white text-base max-w-[600px]"
     >
-
-    XPERIENCE brings stories to life through an
-     interactive original streaming platform and 
-     a visionary production company. It redefines
-      entertainment by blending innovative storytelling ideas 
-      with compelling narratives, allowing audiences to 
-      connect, engage, and immerse themselves like never before.
+    We take pride in our dynamic approach to managing
+    a diverse range of projects. Our team combines
+    strategic insight with efficient execution to showcase 
+    each initiative thoughtfully, reflecting our steadfast
+    dedication to innovation and excellence.
   </h2>
 
 </div>
@@ -415,7 +410,7 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
     </h1>
   </div>
 
-  <div className="z-40 relative w-full pl-20 mt-10 space-y-10">
+  <div className="z-40 relative w-full pl-20 mt-6 space-y-10">
     <div id="wrapmain1" className="flex flex-col items-start">
       <Image
         className="block"
@@ -442,13 +437,8 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
         }}
         className=" z-40 px-1 py-1 text-white text-base max-w-[600px]"
       >
-N’Oier weaves secrets into every seam, 
-crafting garments that are more than just fashion—they 
-are narratives of elegance and mystery. Blending 
-rich storytelling with exquisite craftsmanship,
- each piece embodies luxurious detail and a sense 
- of exclusivity. The result is an enigmatic allure 
- that captivates and leaves a lasting impression, redefining what it means to wear a story.      </h2>
+     N’Oier stitches secrets into every seam, blending storytelling with luxurious detail for an exclusive, enigmatic allure.
+      </h2>
     </div>
 
     <div className="">
@@ -495,8 +485,7 @@ rich storytelling with exquisite craftsmanship,
     </h1>
   </div>
 
-  <div className="z-40 relative w-full pr-20 mt-10 space-y-10">
-
+  <div className="z-40 relative w-full pr-20 space-y-10 ">
 
     <div id="wrapmain1" className="flex flex-col items-end">
       <Image
@@ -524,14 +513,8 @@ rich storytelling with exquisite craftsmanship,
     }}
     className=" z-40 px-1 py-1 text-white text-base max-w-[600px]"
     >
-Suroor crafts one-of-a-kind experiential
- events that seamlessly blend creativity, elegance,
-  and luxury. Each event is designed to deliver 
-  unforgettable moments that captivate the senses 
-   leave a lasting impression. From concept to 
-   execution, Suroor elevates experiences into works
-    of art, ensuring every detail is meticulously 
-    curated for an atmosphere of sophistication and wonder.  </h2>
+   Suroor creates unique, experiential events that blend creativity and luxury, delivering unforgettable moments and lasting impressions.
+  </h2>
 
 </div>
 

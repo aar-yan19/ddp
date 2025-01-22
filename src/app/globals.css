@@ -19,8 +19,9 @@
   }
   
   body.bg-ddpgradient {
-    background: linear-gradient(90deg, #540268, #000000);
+    background: linear-gradient(90deg, #a500ce, #000000);
     background-size: 200% 200%;
+    background-attachment: fixed;
     animation: gradientShift 3s ease forwards;
   }
   
