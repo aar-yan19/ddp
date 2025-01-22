@@ -8,13 +8,11 @@
 
   }
 
-/*   
-  body.bg-ddpgradient {
-    background: linear-gradient(to right, #a500ce, #000000 50.42%);
-    background-size: 100% 50%;
-    background-attachment: fixed;
-  }
-   */
 
    
- 
+  body.bg-ddpgradient2 {
+    background: #000000;
+    background-attachment: fixed;
+  
+  }
+  

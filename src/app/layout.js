@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
             rel="stylesheet"
           />
         </head>
-      <body className="bg-ddpgradient capitalize">
+      <body className=" capitalize">
 
     
         {children}

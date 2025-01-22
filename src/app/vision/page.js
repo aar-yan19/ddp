@@ -43,8 +43,16 @@ export default function CreateProject() {
     <>
       <div
         id="home"
-        className="bg-fixed relative min-h-screen flex flex-col items-center justify-center overflow-y-scroll snap-y snap-mandatory"
+        className="bg-black bg-fixed relative min-h-screen flex flex-col items-center justify-center overflow-y-scroll snap-y snap-mandatory"
       >
+
+<Image
+    className="bg-fixed absolute inset-0 object-cover opacity-50 pointer-events-none"
+    src="/officeddp.jpeg" 
+    alt="Background"
+    layout="fill"
+    priority
+  />
 
 <Image
     className="bg-fixed absolute inset-0 object-cover opacity-25 pointer-events-none"
@@ -53,7 +61,8 @@ export default function CreateProject() {
     layout="fill"
     priority
   />
-     <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-100 pointer-events-none" />
+     <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70 pointer-events-none" />
+     {/* <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 pointer-events-none" /> */}
 
        {/* Hamburger Menu Icon */}
        {!isOverlayOpen && (
@@ -78,24 +87,13 @@ export default function CreateProject() {
           <i className="fa-sharp fa-solid fa-times"></i>
         </button>
         <div className="flex flex-col items-start justify-center h-full p-8 space-y-2">
-          <Link href="#home" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+        <Link href="/" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+            Home
+          </Link>
+          <Link href="" className="font-bold text-lg pointer-events-none border-2 border-white rounded-2xl pl-1.5 pr-1.5" onClick={toggleOverlay}>
             What we do
           </Link>
-          <Link href="#tech" className="font-bold text-lg pointer-events-none" onClick={toggleOverlay}>
-            Ventures
-          </Link>
-          <Link href="#tech" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
-            - Forthly
-          </Link>
-          <Link href="#entertainment" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
-            - XPERIENCE
-          </Link>
-          <Link href="#noier" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
-            - NOIER
-          </Link>
-          <Link href="#suroor" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
-            - suroor
-          </Link>
+          
           <Link href="#entertainment" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
            Team and Leadership
           </Link>
@@ -177,10 +175,10 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
 
       <div className=' z-40 relative flex justify-between'>
           <div className="flex gap-2.5">
-            <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white text-xs text-white hover:opacity-50">
+            <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded bg-transparent border border-white text-xs text-white hover:opacity-50">
               Explore
             </Link>
-            <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white  text-xs text-white hover:opacity-50">
+            <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded bg-transparent border border-white  text-xs text-white hover:opacity-50">
               Query?
             </Link>
             {/* <Link href="./another-link" className="font-light text-white">
@@ -201,332 +199,6 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
       </div>
 
     {/* 1 */}
-
- <div id="tech" className="relative bg-black p-10"  style={{ 
-      
-        backgroundImage: 'url(/forthlyphoto2.jpeg)',
-        backgroundSize: 'cover',
-        backgroundAttachment: 'fixed',
-        backgroundPosition: 'center' , opacity:'45'
-    }}>
-        <div className="absolute inset-0 bg-black opacity-0 pointer-events-none"></div>
-
-         <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-100 pointer-events-none" />
-
-  {/* <Image
-    className="absolute inset-0 object-cover opacity-45 pointer-events-none"
-    src="/forthlyphoto2.jpeg" 
-    alt="Background"
-    layout="fill"
-    priority
-  /> */}
-   {/* <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50 pointer-events-none" /> */}
-
-  <div className="relative z-10 text-center">
-  <h1 className="border-2 rounded inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
-     Technology
-    </h1>
-  </div>
-
-  <div className="z-40 relative w-full pl-20 mt-6 space-y-10">
-    <div id="wrapmain1" className="flex flex-col items-start">
-      <Image
-        className="block"
-        src="/fl.png"
-        width={50}
-        height={50}
-        alt="logo"
-      />
-    </div>
- 
-
-    <div className="relative text-left ">
-      <h1 
-        style={{
-          // transform: `scale(${revscaleValue})`,
-        }}
-        className="decoration-pink-300 decoration-4 text-3xl mb-5 z-40 px-1 text-white font-black max-w-[600px]"
-      >
-        Efficient Project Management, Dynamic Portfolio
-      </h1>
-      <h2 
-        style={{
-          // filter: `blur(${revblurValue}px)`,
-        }}
-        className=" z-40 px-1 py-1 text-white text-base max-w-[600px]"
-      >
-        We take pride in our dynamic approach to managing
-        a diverse range of projects. Our team combines
-        strategic insight with efficient execution to showcase 
-        each initiative thoughtfully, reflecting our steadfast
-        dedication to innovation and excellence.
-      </h2>
-    </div>
-
-    <div className="">
-      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white text-xs text-white hover:opacity-50">
-        Learn More
-      </Link>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-{/* 2 */}
-
-<div
-    id="entertainment"
-    className="relative bg-black p-10"
->
-    <video
-        className="absolute inset-0 object-cover w-full h-full"
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-        style={{}}
-    >
-        <source src="/xfootage2.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
-    <div className="absolute inset-0 bg-black opacity-0 pointer-events-none"></div>
-
-    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-100 pointer-events-none" />
-
-       
-    {/* <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    preload="auto"
-    className="blur-x3s z-0 opacity-45 absolute inset-0 w-full h-full object-cover"
-  >
-    <source src="/interframevideocomp.mp4" type="video/mp4" />
-   
-  </video> */}
-
-{/* 
-<Image
-    className="absolute inset-0 object-cover opacity-45 pointer-events-none"
-    src="/dune.jpg" 
-    alt="Background"
-    layout="fill"
-    priority
-  /> */}
-   {/* <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-100 pointer-events-none" /> */}
-
-
-   <div className="relative z-10 text-center">
-   <h1 className="border-2 rounded inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
-      Entertainment
-    </h1>
-  </div>
-
-  <div className="z-40 relative w-full pr-20 space-y-10 ">
-
-    <div id="wrapmain1" className="flex flex-col items-end">
-      <Image
-        className="block"
-        src="/xlogo.png"
-        width={120}
-        height={120}
-        alt="logo"
-      />
-    </div>
-
-    <div className="  flex flex-col items-end text-right ">
-
-  <h1 
-    style={{
-      // Example: transform: `scale(${revscaleValue})`,
-    }}
-    className="decoration-pink-300 decoration-4 text-3xl mb-5 z-40 px-1 text-white font-black max-w-[600px]"
-  >
-   Independent
-  Original,<br />
-  Interactive entertainment
-  </h1>     
-  <h2 
-    style={{
-      // Example: filter: `blur(${revblurValue}px)`,
-    }}
-    className=" z-40 px-1 py-1 text-white text-base max-w-[600px]"
-    >
-    We take pride in our dynamic approach to managing
-    a diverse range of projects. Our team combines
-    strategic insight with efficient execution to showcase 
-    each initiative thoughtfully, reflecting our steadfast
-    dedication to innovation and excellence.
-  </h2>
-
-</div>
-
-
-    <div className="flex flex-col items-end">
-      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white text-xs text-white hover:opacity-50">
-        Learn More
-      </Link>
-    </div>
-  </div>
-</div>
-
-
-
-{/* 3 */}
-
-
-
-<div id="noier" className="relative bg-black p-10" style={{ 
-      
-      backgroundImage: 'url(/noier1.jpeg)',
-      backgroundSize: 'cover',
-      backgroundAttachment: 'fixed',
-      backgroundPosition: 'center' , opacity:'45'
-  }}>
-      <div className="absolute inset-0 bg-black opacity-10 pointer-events-none"></div>
-  
-      <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-100 pointer-events-none" />
-  
-  
-{/* 
-  <Image
-    className="absolute inset-0 object-cover opacity-45 pointer-events-none"
-    src="/noier1.jpeg" 
-    alt="Background"
-    layout="fill"
-    priority
-  /> */}
-   {/* <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50 pointer-events-none" /> */}
-
-  <div className="relative z-10 text-center">
-  <h1 className="border-2 rounded inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
-      Fashion
-    </h1>
-  </div>
-
-  <div className="z-40 relative w-full pl-20 mt-6 space-y-10">
-    <div id="wrapmain1" className="flex flex-col items-start">
-      <Image
-        className="block"
-        src="/noiernew.png"
-        width={100}
-        height={100}
-        alt="logo"
-      />
-    </div>
- 
-
-    <div className="relative text-left ">
-      <h1 
-        style={{
-          // transform: `scale(${revscaleValue})`,
-        }}
-        className="decoration-pink-300 decoration-4 text-3xl mb-5 z-40 px-1 text-white font-black max-w-[600px]"
-      >
-        A secret stitched in every seam
-      </h1>
-      <h2 
-        style={{
-          // filter: `blur(${revblurValue}px)`,
-        }}
-        className=" z-40 px-1 py-1 text-white text-base max-w-[600px]"
-      >
-     N’Oier stitches secrets into every seam, blending storytelling with luxurious detail for an exclusive, enigmatic allure.
-      </h2>
-    </div>
-
-    <div className="">
-      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white text-xs text-white hover:opacity-50">
-        Learn More
-      </Link>
-    </div>
-  </div>
-</div>
-
-
-
-
-{/* 4 */}
-
-
-<div
-  id="suroor"
-  className="relative bg-black p-10" style={{ 
-      
-    backgroundImage: 'url(/event2.jpeg)',
-    backgroundSize: 'cover',
-    backgroundAttachment: 'fixed',
-    backgroundPosition: 'center' 
-}}>
-    <div className="absolute inset-0 bg-black opacity-20 pointer-events-none"></div>
-
-  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-100 pointer-events-none" /> 
-
-{/* 
-<Image
-    className="absolute inset-0 object-cover opacity-45 pointer-events-none"
-    src="/event1.jpeg" 
-    alt="Background"
-    layout="fill"
-    priority
-  />
-   <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-100 pointer-events-none" /> */}
-
-  
-   <div className="relative z-10 text-center">
-   <h1 className="border-2 rounded inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
-    suroor
-    </h1>
-  </div>
-
-  <div className="z-40 relative w-full pr-20 space-y-10 ">
-
-    <div id="wrapmain1" className="flex flex-col items-end">
-      <Image
-        className="block"
-        src="/suroor.png"
-        width={100}
-        height={100}
-        alt="logo"
-      />
-    </div>
-
-    <div className="  flex flex-col items-end text-right ">
-
-  <h1 
-    style={{
-      // Example: transform: `scale(${revscaleValue})`,
-    }}
-    className="decoration-pink-300 decoration-4 text-3xl mb-5 z-40 px-1 text-white font-black max-w-[600px]"
-  >
-  Timeless, Premium & Artistic, <br /> Memorable Events
-  </h1>     
-  <h2 
-    style={{
-      // Example: filter: `blur(${revblurValue}px)`,
-    }}
-    className=" z-40 px-1 py-1 text-white text-base max-w-[600px]"
-    >
-   Suroor creates unique, experiential events that blend creativity and luxury, delivering unforgettable moments and lasting impressions.
-  </h2>
-
-</div>
-
-
-    <div className="flex flex-col items-end">
-      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white text-xs text-white hover:opacity-50">
-        Learn More
-      </Link>
-    </div>
-  </div>
-</div>
-
 
 
 

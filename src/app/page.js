@@ -43,7 +43,7 @@ export default function CreateProject() {
     <>
       <div
         id="home"
-        className="bg-fixed relative min-h-screen flex flex-col items-center justify-center overflow-y-scroll snap-y snap-mandatory"
+        className="bg-fixed bg-custom-gradient bg-100 relative min-h-screen flex flex-col items-center justify-center overflow-y-scroll snap-y snap-mandatory"
       >
 
 <Image
@@ -78,10 +78,13 @@ export default function CreateProject() {
           <i className="fa-sharp fa-solid fa-times"></i>
         </button>
         <div className="flex flex-col items-start justify-center h-full p-8 space-y-2">
+        <Link href="/" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+            Home
+          </Link>
           <Link href="/vision" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             What we do
           </Link>
-          <Link href="#tech" className="font-bold text-lg pointer-events-none opacity-50" onClick={toggleOverlay}>
+          <Link href="#tech" className="font-bold text-lg pointer-events-none border-2 border-white rounded-2xl pl-1.5 pr-1.5" onClick={toggleOverlay}>
             Ventures
           </Link>
           <Link href="#tech" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
@@ -177,10 +180,10 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
 
       <div className=' z-40 relative flex justify-between'>
           <div className="flex gap-2.5">
-            <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white text-xs text-white hover:opacity-50">
+            <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded bg-transparent border border-white text-xs text-white hover:opacity-50">
               Explore
             </Link>
-            <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white  text-xs text-white hover:opacity-50">
+            <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded bg-transparent border border-white  text-xs text-white hover:opacity-50">
               Query?
             </Link>
             {/* <Link href="./another-link" className="font-light text-white">
@@ -223,7 +226,7 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
    {/* <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50 pointer-events-none" /> */}
 
   <div className="relative z-10 text-center">
-  <h1 className="border-2 rounded inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
+  <h1 className="border-2 rounded-2xl inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
      Technology
     </h1>
   </div>
@@ -265,7 +268,7 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
     </div>
 
     <div className="">
-      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white text-xs text-white hover:opacity-50">
+      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded bg-transparent border border-white text-xs text-white hover:opacity-50">
         Learn More
       </Link>
     </div>
@@ -325,7 +328,7 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
 
 
    <div className="relative z-10 text-center">
-   <h1 className="border-2 rounded inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
+   <h1 className="border-2 rounded-2xl inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
       Entertainment
     </h1>
   </div>
@@ -374,7 +377,7 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
 
 
     <div className="flex flex-col items-end">
-      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white text-xs text-white hover:opacity-50">
+      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded bg-transparent border border-white text-xs text-white hover:opacity-50">
         Learn More
       </Link>
     </div>
@@ -410,7 +413,7 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
    {/* <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50 pointer-events-none" /> */}
 
   <div className="relative z-10 text-center">
-  <h1 className="border-2 rounded inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
+  <h1 className="border-2 rounded-2xl inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
       Fashion
     </h1>
   </div>
@@ -452,7 +455,7 @@ rich storytelling with exquisite craftsmanship,
     </div>
 
     <div className="">
-      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white text-xs text-white hover:opacity-50">
+      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded bg-transparent border border-white text-xs text-white hover:opacity-50">
         Learn More
       </Link>
     </div>
@@ -490,7 +493,7 @@ rich storytelling with exquisite craftsmanship,
 
   
    <div className="relative z-10 text-center">
-   <h1 className="border-2 rounded inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
+   <h1 className="border-2 rounded-2xl inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
     events
     </h1>
   </div>
@@ -537,7 +540,7 @@ Suroor crafts one-of-a-kind experiential
 
 
     <div className="flex flex-col items-end">
-      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded-3xl bg-transparent border border-white text-xs text-white hover:opacity-50">
+      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded bg-transparent border border-white text-xs text-white hover:opacity-50">
         Learn More
       </Link>
     </div>
