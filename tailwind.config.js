@@ -9,9 +9,16 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        'custom-gradient': 'linear-gradient(to right, #a500ce, #000000 50.42%)',
+      },
+      backgroundSize: {
+        '100': '100% 50%',
       },
       fontFamily: {
         helv: ['Helvetica'], 
+      },
+      backgroundAttachment: {
+        'fixed': 'fixed',
       },
       colors: {
         background: "var(--background)",
