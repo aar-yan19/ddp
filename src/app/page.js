@@ -93,7 +93,7 @@ export default function CreateProject() {
           <Link href="#noier" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             - N'OIER
           </Link>
-          <Link href="#suroor" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+          <Link href="#event" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             - suroor
           </Link>
           <Link href="#entertainment" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
@@ -466,7 +466,7 @@ rich storytelling with exquisite craftsmanship,
 
 
 <div
-  id="suroor"
+  id="event"
   className="relative bg-black p-10" style={{ 
       
     backgroundImage: 'url(/event2.jpeg)',
@@ -491,7 +491,7 @@ rich storytelling with exquisite craftsmanship,
   
    <div className="relative z-10 text-center">
    <h1 className="border-2 rounded inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
-    suroor
+    events
     </h1>
   </div>
 
