@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'custom-gradient': 'linear-gradient(to right, #a500ce, #000000 50.42%)',
+        'custom-gradient2': 'linear-gradient(to left, #a500ce, #000000 50.42%)',
       },
       backgroundSize: {
         '100': '100% 50%',
