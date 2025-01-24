@@ -78,13 +78,13 @@ export default function CreateProject() {
           <i className="fa-sharp fa-solid fa-times"></i>
         </button>
         <div className="flex flex-col items-start justify-center h-full p-8 space-y-2">
-        <Link href="/" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+        <Link href="/" className="font-bold text-lg hover:opacity-50 border-2 border-white bg-white text-black rounded-2xl pl-1.5 pr-1.5 pointer-events-none" onClick={toggleOverlay}>
             Home
           </Link>
           <Link href="/vision" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             What we do
           </Link>
-          <Link href="#tech" className="font-bold text-lg pointer-events-none border-2 border-white rounded-2xl pl-1.5 pr-1.5" onClick={toggleOverlay}>
+          <Link href="#tech" className="font-bold text-lg pointer-events-none underline" onClick={toggleOverlay}>
             Ventures
           </Link>
           <Link href="#tech" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
@@ -99,11 +99,11 @@ export default function CreateProject() {
           <Link href="#event" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             - suroor
           </Link>
-          <Link href="#entertainment" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
-           Team and Leadership
+          <Link href="/team" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+           Team & Leadership
           </Link>
          
-          <Link href="#contact" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+          <Link href="/contact" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             Contact
           </Link>
         </div>
@@ -210,7 +210,7 @@ With state-of-the-art tech, engaging storytelling, and flawless execution, we br
         backgroundImage: 'url(/forthlyphoto2.jpeg)',
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
-        backgroundPosition: 'center' , opacity:'45'
+        backgroundPosition: 'center' 
     }}>
         <div className="absolute inset-0 bg-black opacity-0 pointer-events-none"></div>
 

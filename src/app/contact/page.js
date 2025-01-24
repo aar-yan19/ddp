@@ -43,27 +43,17 @@ export default function CreateProject() {
     <>
       <div
         id="home"
-        className="bg-black bg-fixed relative min-h-screen flex flex-col items-center justify-center overflow-y-scroll snap-y snap-mandatory"
+        className="bg-fixed bg-custom-gradient2 bg-100 relative min-h-screen flex flex-col items-center justify-center overflow-y-scroll snap-y snap-mandatory"
       >
 
 <Image
-    className="bg-fixed absolute inset-0 object-cover opacity-90 pointer-events-none"
-    src="/officeddp.jpeg" 
-    alt="Background"
-    layout="fill"
-    priority
-  />
-
-{/* <Image
     className="bg-fixed absolute inset-0 object-cover opacity-25 pointer-events-none"
     src="/grainy.jpg" 
     alt="Background"
     layout="fill"
     priority
-  /> */}
-     <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-100 pointer-events-none" />
-     
-     {/* <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 pointer-events-none" /> */}
+  />
+     <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-100 pointer-events-none" />
 
        {/* Hamburger Menu Icon */}
        {!isOverlayOpen && (
@@ -88,32 +78,32 @@ export default function CreateProject() {
           <i className="fa-sharp fa-solid fa-times"></i>
         </button>
         <div className="flex flex-col items-start justify-center h-full p-8 space-y-2">
-        <Link href="/" className="font-bold text-lg hover:opacity-50 " onClick={toggleOverlay}>
+        <Link href="/" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             Home
           </Link>
-          <Link href="/vision"className="font-bold text-lg hover:opacity-50 border-2 border-white bg-white text-black rounded-2xl pl-1.5 pr-1.5 pointer-events-none" onClick={toggleOverlay}>
+          <Link href="/vision" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             What we do
           </Link>
           <Link href="#tech" className="font-bold text-lg pointer-events-none underline" onClick={toggleOverlay}>
             Ventures
           </Link>
-          <Link href="/#tech" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+          <Link href="#tech" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             - Forthly
           </Link>
-          <Link href="/#entertainment" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+          <Link href="#entertainment" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             - XPERIENCE
           </Link>
-          <Link href="/#noier" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+          <Link href="#noier" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             - N'OIER
           </Link>
-          <Link href="/#event" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+          <Link href="#event" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             - suroor
           </Link>
           <Link href="/team" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
            Team & Leadership
           </Link>
          
-          <Link href="/contact" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+          <Link href="#contact" className="font-bold text-lg hover:opacity-50 border-2 border-white bg-white text-black rounded-2xl pl-1.5 pr-1.5 pointer-events-none" onClick={toggleOverlay}>
             Contact
           </Link>
         </div>
@@ -168,7 +158,7 @@ export default function CreateProject() {
            
           }}
           >
-          Crafting Stories Across Ventures,<br /> All Under One Roof.
+            Reach out to us,< br /> let the great thigs begin <i className="fa-brands fa-jedi-order"></i>
           </h1>
           
         </div>
@@ -182,77 +172,22 @@ style={{
 }}
           
           className="decoration-pink-300 decoration-4 mb-5 text-base z-40 px-1 py-1 text-white inline-block max-w-[500px] mx-auto">
-         Led by Mr. Vikas Mittal, this multi-venture platform invests 
-         across diverse industries to empower real talent.
-          Driven by his vision, it provides opportunities 
-          for innovators to kickstart their journeys, shape 
-          their futures, and craft impactful stories—uniting
-           ventures and talent under one visionary roof.        </h2>
+         (click to copy the mail)         </h2>
           
-
         </div>
 
-        
 
-        <div className='scale-50 z-40 flex gap-10  justify-center items-center'>
-  <div className='flex'>
-    <Image
-
-      src="/fl.png"
-      width={40}
-      height={40}
-      alt="logo"
-    />
-  </div>
-  <div className='flex'>
-    <Image
-
-      src="/xlogo.png"
-      width={95}
-      height={95}
-      alt="logo"
-    />
-  </div>
-
-  <div className='flex'>
-  <Image
-        className="block"
-        src="/noiernew.png"
-        width={100}
-        height={100}
-        alt="logo"
-      />
-  </div>
-
-
-  <div className='flex'>
-
-  <Image
-        className="block"
-        src="/suroor.png"
-        width={100}
-        height={100}
-        alt="logo"
-      />
-        </div>
-
+<div className="relative z-10 text-center">
+  <button
+    className="border-2 rounded-2xl inline p-1.5 pointer-events-auto mx-auto text-center border-white font-bold text-white"
+    onClick={() => {
+      navigator.clipboard.writeText('contact@devdrishtiproductions.in');
+      alert('email copied!');
+    }}
+  >
+    contact@devdrishtiproductions.in
+  </button>
 </div>
-
-
-
-      {/* <div className=' z-40 relative flex justify-between'>
-          <div className="flex gap-2.5">
-            <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded bg-transparent border border-white text-xs text-white hover:opacity-50">
-              Explore
-            </Link>
-            <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded bg-transparent border border-white  text-xs text-white hover:opacity-50">
-              Query?
-            </Link>
-         
-          </div>
-        </div> */}
-
-        
 {/* 
         Arrow Down Icon
         <div className="flex gap-4">
@@ -264,10 +199,6 @@ style={{
         {/* Spacer */}
         <div className="my-8"></div>
       </div>
-
-    {/* 1 */}
-
-
 
     
 

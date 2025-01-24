@@ -46,23 +46,23 @@ export default function CreateProject() {
         className="bg-black bg-fixed relative min-h-screen flex flex-col items-center justify-center overflow-y-scroll snap-y snap-mandatory"
       >
 
+{/* sm:object-[center_right] */}
 <Image
-    className="bg-fixed absolute inset-0 object-cover opacity-90 pointer-events-none"
-    src="/officeddp.jpeg" 
+    className="bg-fixed absolute inset-0 object-cover scale-75 rounded-2xl opacity-70 pointer-events-none"
+    src="/teamoffice.jpeg" 
     alt="Background"
     layout="fill"
     priority
   />
-
-{/* <Image
-    className="bg-fixed absolute inset-0 object-cover opacity-25 pointer-events-none"
+{/* 
+<Image
+    className="bg-fixed absolute inset-0 object-cover scale-75 rounded-2xl  opacity-25 pointer-events-none"
     src="/grainy.jpg" 
     alt="Background"
     layout="fill"
     priority
   /> */}
-     <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-100 pointer-events-none" />
-     
+     <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70 pointer-events-none" />
      {/* <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-70 pointer-events-none" /> */}
 
        {/* Hamburger Menu Icon */}
@@ -91,10 +91,10 @@ export default function CreateProject() {
         <Link href="/" className="font-bold text-lg hover:opacity-50 " onClick={toggleOverlay}>
             Home
           </Link>
-          <Link href="/vision"className="font-bold text-lg hover:opacity-50 border-2 border-white bg-white text-black rounded-2xl pl-1.5 pr-1.5 pointer-events-none" onClick={toggleOverlay}>
+          <Link href="/vision" className="font-bold text-lg hover:opacity-50 " onClick={toggleOverlay}>
             What we do
           </Link>
-          <Link href="#tech" className="font-bold text-lg pointer-events-none underline" onClick={toggleOverlay}>
+          <Link href="#!" className="font-bold text-lg pointer-events-none underline" onClick={toggleOverlay}>
             Ventures
           </Link>
           <Link href="/#tech" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
@@ -109,7 +109,7 @@ export default function CreateProject() {
           <Link href="/#event" className="ml-5 font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
             - suroor
           </Link>
-          <Link href="/team" className="font-bold text-lg hover:opacity-50" onClick={toggleOverlay}>
+          <Link href="#!" className="font-bold text-lg hover:opacity-50 border-2 border-white bg-white text-black rounded-2xl pl-1.5 pr-1.5 pointer-events-none" onClick={toggleOverlay}>
            Team & Leadership
           </Link>
          
@@ -168,7 +168,7 @@ export default function CreateProject() {
            
           }}
           >
-          Crafting Stories Across Ventures,<br /> All Under One Roof.
+            the showrunners
           </h1>
           
         </div>
@@ -182,62 +182,9 @@ style={{
 }}
           
           className="decoration-pink-300 decoration-4 mb-5 text-base z-40 px-1 py-1 text-white inline-block max-w-[500px] mx-auto">
-         Led by Mr. Vikas Mittal, this multi-venture platform invests 
-         across diverse industries to empower real talent.
-          Driven by his vision, it provides opportunities 
-          for innovators to kickstart their journeys, shape 
-          their futures, and craft impactful stories—uniting
-           ventures and talent under one visionary roof.        </h2>
+        Meet our dedicated and versatile team.        </h2>
           
-
         </div>
-
-        
-
-        <div className='scale-50 z-40 flex gap-10  justify-center items-center'>
-  <div className='flex'>
-    <Image
-
-      src="/fl.png"
-      width={40}
-      height={40}
-      alt="logo"
-    />
-  </div>
-  <div className='flex'>
-    <Image
-
-      src="/xlogo.png"
-      width={95}
-      height={95}
-      alt="logo"
-    />
-  </div>
-
-  <div className='flex'>
-  <Image
-        className="block"
-        src="/noiernew.png"
-        width={100}
-        height={100}
-        alt="logo"
-      />
-  </div>
-
-
-  <div className='flex'>
-
-  <Image
-        className="block"
-        src="/suroor.png"
-        width={100}
-        height={100}
-        alt="logo"
-      />
-        </div>
-
-</div>
-
 
 
       {/* <div className=' z-40 relative flex justify-between'>
@@ -267,6 +214,91 @@ style={{
 
     {/* 1 */}
 
+
+    <div
+    id="entertainment"
+    className="relative bg-black p-10"
+>
+       
+    {/* <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    preload="auto"
+    className="blur-x3s z-0 opacity-45 absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/interframevideocomp.mp4" type="video/mp4" />
+   
+  </video> */}
+
+{/* 
+<Image
+    className="absolute inset-0 object-cover opacity-45 pointer-events-none"
+    src="/dune.jpg" 
+    alt="Background"
+    layout="fill"
+    priority
+  /> */}
+   {/* <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black opacity-100 pointer-events-none" /> */}
+
+
+   <div className="relative z-10 text-center">
+   <h1 className="border-2 rounded-2xl inline p-1.5 pointer-events-none mx-auto text-center border-white font-bold text-white">  
+      Entertainment
+    </h1>
+  </div>
+
+  <div className="z-40 relative w-full pr-20 mt-10 space-y-10">
+
+
+    <div id="wrapmain1" className="flex flex-col items-end">
+      <Image
+        className="block"
+        src="/xlogo.png"
+        width={120}
+        height={120}
+        alt="logo"
+      />
+    </div>
+
+    <div className="  flex flex-col items-end text-right ">
+
+  <h1 
+    style={{
+      // Example: transform: `scale(${revscaleValue})`,
+    }}
+    className="decoration-pink-300 decoration-4 text-3xl mb-5 z-40 px-1 text-white font-black max-w-[600px]"
+  >
+   Independent &
+  Original,<br />
+  Interactive entertainment
+  </h1>     
+  <h2 
+    style={{
+      // Example: filter: `blur(${revblurValue}px)`,
+    }}
+    className=" z-40 px-1 py-1 text-white text-base max-w-[600px]"
+    >
+
+    XPERIENCE brings stories to life through an
+     interactive original streaming platform and 
+     a visionary production company. It redefines
+      entertainment by blending innovative storytelling ideas 
+      with compelling narratives, allowing audiences to 
+      connect, engage, and immerse themselves like never before.
+  </h2>
+
+</div>
+
+
+    <div className="flex flex-col items-end">
+      <Link href="#!" className="p-2.5 font-bold font-helv tracking-tighter rounded bg-transparent border border-white text-xs text-white hover:opacity-50">
+        Learn More
+      </Link>
+    </div>
+  </div>
+</div>
 
 
     
